@@ -19,8 +19,7 @@ class Blockchain:
 
     def register_node(self, address: str):
         """
-        노드 목록에 새 노드를 추가합니다.
-        :param address: 노드의 주소 (예: 'http://192.168.0.5:5000')
+        노드 목록에 새 노드를 추가합니다. :param address: 노드의 주소 (예: 'http://192.168.0.5:5000')
         """
         parsed_url = urlparse(address)
         if parsed_url.netloc:
@@ -33,9 +32,7 @@ class Blockchain:
 
     def valid_chain(self, chain: list) -> bool:
         """
-        주어진 블록체인이 유효한지 확인합니다.
-        :param chain: 블록체인
-        :return: True or False
+        주어진 블록체인이 유효한지 확인합니다. :param chain: 블록체인 :return: True or False
         """
         last_block = chain[0]
         current_index = 1
@@ -61,8 +58,7 @@ class Blockchain:
 
     def resolve_conflicts(self) -> bool:
         """
-        합의 알고리즘입니다. 네트워크에서 가장 긴 체인을 찾아
-        우리 체인으로 교체하여 충돌을 해결합니다.
+        합의 알고리즘입니다. 네트워크에서 가장 긴 체인을 찾아 우리 체인으로 교체하여 충돌을 해결합니다.
         :return: 우리 체인이 교체되었으면 True, 아니면 False
         """
         neighbours = self.nodes
@@ -98,7 +94,7 @@ class Blockchain:
 
     def new_block(self, proof: int, previous_hash: str = None) -> dict:
         """
-        체인에 새로운 블록을 생성합니다.
+        체인에 새로운 블록을 생성.
         :param proof: 작업 증명 알고리즘으로 얻은 증명 값
         :param previous_hash: 이전 블록의 해시
         :return: 새 블록
@@ -119,7 +115,7 @@ class Blockchain:
 
     def new_transaction(self, sender: str, recipient: str, amount: float) -> int:
         """
-        다음 채굴될 블록에 추가될 새로운 거래를 생성합니다.
+        다음 채굴될 블록에 추가될 새로운 거래를 생성.
         :param sender: 보내는 사람의 주소
         :param recipient: 받는 사람의 주소
         :param amount: 금액
@@ -140,7 +136,7 @@ class Blockchain:
     @staticmethod
     def hash(block: dict) -> str:
         """
-        블록의 SHA-256 해시를 생성합니다.
+        블록의 SHA-256 해시를 생성.
         :param block: 블록
         :return: 해시 문자열
         """
