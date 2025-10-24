@@ -1,4 +1,4 @@
-==========================================================
+
 Simple Blockchain in Python
 ==========================================================
 This project is a simple implementation of a cryptocurrency blockchain created for educational purposes, based on the popular tutorial "Learn Blockchains by Building One".
