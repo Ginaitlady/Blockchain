@@ -92,7 +92,7 @@ JSON
 Resolve Conflicts: Send a GET request to {{address}}/nodes/resolve to run the consensus algorithm. The node will check other registered nodes and replace its chain if it finds a longer valid one.
 
 
-==========================================================
+
 🐍 SnakeCoin: A Simple Proof-of-Work Blockchain in Python
 ==========================================================
 
