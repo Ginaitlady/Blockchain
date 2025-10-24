@@ -1,4 +1,6 @@
+==========================================================
 Simple Blockchain in Python
+==========================================================
 This project is a simple implementation of a cryptocurrency blockchain created for educational purposes, based on the popular tutorial "Learn Blockchains by Building One".
 
 It covers the fundamental concepts of blockchain technology, including proof-of-work, transactions, and a consensus algorithm for resolving conflicts in a decentralized network. The entire blockchain is accessible via an HTTP API built with Flask.
@@ -90,10 +92,10 @@ JSON
 Resolve Conflicts: Send a GET request to {{address}}/nodes/resolve to run the consensus algorithm. The node will check other registered nodes and replace its chain if it finds a longer valid one.
 
 
-======================================================================================================================================================================================================
-======================================================================================================================================================================================================
-
+==========================================================
 🐍 SnakeCoin: A Simple Proof-of-Work Blockchain in Python
+==========================================================
+
 This project is an educational implementation of a simple cryptocurrency blockchain, written in Python. It is based on the popular "Let's Build the Tiniest Blockchain" article, but has been significantly enhanced to include a more secure Proof-of-Work algorithm and a robust consensus mechanism.
 
 This application runs as a networked Flask server (a "node") that can communicate with other nodes. It allows users to submit transactions, mine new blocks (and earn rewards), and resolve conflicts between different versions of the chain across the network.
